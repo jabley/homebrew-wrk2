@@ -6,7 +6,7 @@ Homebrew tap for installing [wrk2](https://github.com/GilTene/wrk2)
 
 ```sh
 $ brew tap jabley/homebrew-wrk2
-$ brew install wrk2
+$ brew install --HEAD wrk2
 ```
 
 ## Boxen
