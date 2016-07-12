@@ -6,13 +6,16 @@ class Wrk2 < Formula
 
   depends_on "openssl"
 
+  conflicts_with "wrk-trello", :because => "both install `wrk` binaries"
+  conflicts_with "wrk", :because => "both install `wrk` binaries"
+
   def install
     ENV.j1
     system "make"
-    bin.install "wrk2"
+    bin.install "wrk"
   end
 
   test do
-    system *%W[#{bin}/wrk2 -r 5 -c 1 -t 1 -d 1 https://example.com/]
+    system *%W[#{bin}/wrk -r 5 -c 1 -t 1 -d 1 https://example.com/]
   end
 end
