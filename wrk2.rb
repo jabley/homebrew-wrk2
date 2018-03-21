@@ -7,7 +7,6 @@ class Wrk2 < Formula
   depends_on "openssl"
 
   def install
-    ENV.j1
     system "make"
     mv "wrk", "wrk2"
     bin.install "wrk2"
