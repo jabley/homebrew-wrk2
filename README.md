@@ -1,18 +1,23 @@
 # homebrew-wrk2
 
-Homebrew tap for installing [wrk2](https://github.com/GilTene/wrk2)
+Personal Homebrew Tap. Initially, it is for [wrk2 with ARM support](https://github.com/outsinre/wrk2).
 
 ## Homebrew
 
 ```sh
-$ brew tap jabley/homebrew-wrk2
-$ brew install --HEAD wrk2
+~ $ brew tap outsinre/wrk2
+
+# latest
+~ $ brew install --HEAD outsinre/wrk2/wrk2
+
+# release
+~ $ brew install outsinre/wrk2/wrk2
 ```
 
 ## Boxen
 
 ```puppet
-homebrew::tap { 'jabley/homebrew-wrk2': }
+homebrew::tap { 'outsinre/wrk2': }
 ```
 
 ```yaml
